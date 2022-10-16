@@ -132,8 +132,9 @@
     <arg name="camera" value="$(arg camera)" />
   </include>
 
-<node type="rviz" name="rviz" pkg="rviz" args="-d /home/tildeasterisk/catkin_ws/src/freenect_stack/freenect_depth-reg.rviz" />
+<!-- ~* Here i've added my nodes to run after freenect_stack launch -->
 <node type="kinect_aux_node" name="kinect_aux_node" pkg="kinect_aux" args="" />
 <node type="tiltzbot.py" name="tiltzbot" pkg="zionrobot" args="" />
+<node type="rviz" name="rviz" pkg="rviz" args="-d /home/tildeasterisk/catkin_ws/src/freenect_stack/freenect_depth-reg.rviz" />
 
 </launch>
